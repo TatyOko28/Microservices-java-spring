@@ -291,7 +291,7 @@ Update the build section in pom.xml with the following
 
 # Auth service
 
-Dependencies (add in addition to whats there)
+Dependencies (add in addition to whats there).
 
 ```
         <dependency>
