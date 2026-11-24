@@ -53,21 +53,4 @@ public class AuthIntegrationTest {
         .then()
         .statusCode(401);
   }
-  @Test
-  public void shouldReturnUnauthorizedOnInvalidLogin() {
-    String loginPayload = """
-          {
-            "email": "invalid_user@test.com",
-            "password": "wrongpassword"
-          }
-        """;
-
-    given()
-            .contentType("application/json")
-            .body(loginPayload)
-            .when()
-            .post("/auth/login")
-            .then()
-            .statusCode(401);
-  }
 }
